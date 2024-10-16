@@ -1,0 +1,106 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Image based tracking AR.js demo</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  
+  <body>
+
+      <a-scene
+        vr-mode-ui="enabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+        embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+      <a-nft
+        type="nft"
+        url="https://cdn.glitch.global/9d512d50-6b6a-4d7f-9fc1-82f7209dbc62/o_quadro"
+        smooth="true"
+        smoothcount="10"
+        smoothtolerance=".01"
+        smooththreshold="5"> <!-- Configurações do Marcador -->
+
+        <a-entity
+          gltf-model="https://cdn.glitch.global/9d512d50-6b6a-4d7f-9fc1-82f7209dbc62/vincent_van_gogh.glb?v=1728999447436"
+          scale="120 120 120"
+          position="0 0 -50"
+          rotation="180 90 270"
+          animation="property: rotation; from: 180 90 270; to: -180 90 270; loop: true; dur: 20000"
+        ></a-entity> <!-- Configurações do Modelo 3D (GLB) -->
+
+        <a-text 
+          value="Vincent Van Gogh" 
+          position="0 0 25"
+          rotation="270 90 270"
+          align="center" 
+          color="#FFFFFF" 
+          scale="50 50 50"
+        ></a-text> <!-- Anotação de Texto -->
+      </a-nft>
+      
+      <a-nft
+        type="nft"
+        url="https://cdn.glitch.global/9d512d50-6b6a-4d7f-9fc1-82f7209dbc62/monalisa"
+        smooth="true"
+        smoothcount="10"
+        smoothtolerance=".01"
+        smooththreshold="5"> <!-- Configurações do Marcador -->
+        
+        <a-entity
+          gltf-model="https://cdn.glitch.global/9d512d50-6b6a-4d7f-9fc1-82f7209dbc62/leonardo_da_vinci.glb?v=1729092295821"
+          scale="0.6 0.6 0.6"
+          position="0 0 -215"
+          rotation="0 90 270"
+          animation="property: rotation; from: 0 90 270; to: 360 90 270; loop: true; dur: 20000"
+        ></a-entity> <!-- Configurações do Modelo 3d (GLB) -->
+        
+        <a-text 
+          value="Leonardo Da Vinci" 
+          position="0 0 -25"
+          rotation="270 90 270"
+          align="center" 
+          color="#FFFFFF" 
+          scale="50 50 50"
+        ></a-text> <!-- Anotação de Texto -->
+        
+      </a-nft>
+        
+      <a-nft
+        type="nft"
+        url="https://cdn.glitch.global/9d512d50-6b6a-4d7f-9fc1-82f7209dbc62/a_persistencia_da_memoria"
+        smooth="true"
+        smoothcount="10"
+        smoothtolerance=".01"
+        smooththreshold="5"> <!-- Configurações do Marcador -->
+        
+        <a-entity
+          gltf-model="https://cdn.glitch.global/9d512d50-6b6a-4d7f-9fc1-82f7209dbc62/salvador_dali.glb?v=1729094052514"
+          scale="0.15 0.15 0.15"
+          position="0 0 -75"
+          rotation="0 90 270"
+          animation="property: rotation; from: 270 90 270; to: -270 90 270; loop: true; dur: 20000"
+        ></a-entity> <!-- Configurações do Modelo 3d (GLB) -->
+        
+        <a-text 
+          value="Salvador Dali" 
+          position="0 0 0"
+          rotation="270 90 270"
+          align="center" 
+          color="#FFFFFF" 
+          scale="50 50 50"
+        ></a-text> <!-- Anotação de Texto -->
+        
+      </a-nft>
+
+      <!-- Camera that tracks device movement -->
+      <a-entity camera></a-entity>
+    </a-scene>
+    
+  </body>
+  
+</html>
