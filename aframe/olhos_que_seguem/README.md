@@ -1,3 +1,7 @@
+# Olhos que Seguem
+
+![OqS](assets/olhos_que_seguem_aframe.png)
+
 ## Descrição do Projeto
 
 O projeto se dá em volta da pintura de Vincent Van Gogh chamada “O Quadro”, onde ao mover o mouse ou a câmera, os olhos de Van Gogh lhe seguem.
