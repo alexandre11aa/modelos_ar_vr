@@ -1,3 +1,7 @@
+# Busto de Artistas
+
+![BdA](assets/busto_de_artistas_aframe.png)
+
 ## Descrição do Projeto
 
 O projeto se dá em volta de dois quadros, um de Vincent Van Gogh chamado “O Quadro”, e 	um de Leonardo Da Vinci chamado “Monalisa” e um de Salvador Dali chamado “A 	Persistência da Memória”, onde ao apontar a câmera para eles, um busto de seus autores em 	3D é mostrado.
